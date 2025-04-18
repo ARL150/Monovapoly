@@ -98,20 +98,19 @@ nav {
     position: relative;
 }
 
-/* Cambiado de left a right */
+/* Menú lateral (escondido a la derecha) */
 .navigation {
     position: fixed;
     top: 0;
-    right: -250px; /* Se oculta a la derecha inicialmente */
+    right: -250px;
     width: 250px;
     height: 100%;
     background: #333;
     transition: right 0.4s ease;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra hacia la izquierda */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
 
-/* Cuando está activo, se muestra desde la derecha */
 .navigation.active {
     right: 0;
 }
@@ -128,7 +127,7 @@ nav {
 .navigation ul li a {
     display: flex;
     align-items: center;
-    color: #fff; /* Texto blanco */
+    color: #fff;
     font-weight: 500;
     text-decoration: none;
     padding: 10px;
@@ -144,18 +143,19 @@ nav {
 .navigation ul li a .icon {
     font-size: 24px;
     margin-right: 10px;
-    color: #fff; /* Íconos blancos */
+    color: #fff;
 }
 
 .navigation ul li a .title {
     font-size: 1em;
-    color: #fff; /* Títulos blancos */
+    color: #fff;
 }
 
+/* Botón para cerrar menú */
 .close-btn {
     position: absolute;
     top: 15px;
-    left: 15px; /* Cambiado de right a left */
+    left: 15px;
     font-size: 24px;
     color: #fff;
     cursor: pointer;
@@ -166,10 +166,12 @@ nav {
     color: #f44336;
 }
 
+/* Botón para abrir menú */
 .menu-toggle {
     position: fixed;
     top: 20px;
-    right: 20px; /* Cambiado de left a right */
+    right: 20px;
+    z-index: 9999; /* Muy alto para estar sobre todo */
     display: flex;
     align-items: center;
     gap: 10px;
@@ -179,18 +181,51 @@ nav {
     padding: 12px 24px;
     border-radius: 8px;
     cursor: pointer;
-    z-index: 2000;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     transition: background 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
 .menu-toggle i {
     font-size: 20px;
-    color: #000; /* Puedes cambiarlo a blanco si deseas */
+    color: #000;
 }
 
 .menu-toggle:hover {
     background: #e0e0e0;
     color: #333;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* 🌐 RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+    .navigation {
+        width: 200px;
+    }
+
+    .menu-toggle {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .navigation ul li a .icon {
+        font-size: 20px;
+        margin-right: 8px;
+    }
+
+    .navigation ul li a .title {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navigation {
+        width: 180px;
+    }
+
+    .menu-toggle {
+        top: 10px;
+        right: 10px;
+        padding: 8px 16px;
+        font-size: 12px;
+    }
 }
