@@ -169,8 +169,8 @@ nav {
 /* Botón para abrir menú */
 .menu-toggle {
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 10px;
+    right: 10px;
     z-index: 9999; /* Muy alto para estar sobre todo */
     display: flex;
     align-items: center;
