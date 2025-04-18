@@ -1,18 +1,13 @@
-const menuToggle = document.querySelector('.menu-toggle');
-const navigation = document.querySelector('.navigation');
-const closeBtn = document.querySelector('.close-btn');
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.navigation');
+    const closeBtn = document.querySelector('.close-btn');
 
-menuToggle.addEventListener('click', () => {
-    navigation.classList.toggle('active');
-});
+    toggle.addEventListener('click', () => {
+        nav.classList.add('active');
+    });
 
-closeBtn.addEventListener('click', () => {
-    navigation.classList.remove('active');
-});
+    closeBtn.addEventListener('click', () => {
+        nav.classList.remove('active');
+    });
 
-document.addEventListener('click', (event) => {
-    if (!navigation.contains(event.target) && !menuToggle.contains(event.target)) {
-        navigation.classList.remove('active');
-    }
-});
 
