@@ -93,3 +93,103 @@ nav {
     width: 150px;
     height: auto;
 }
+
+.container {
+    position: relative;
+}
+
+/* Cambiado de left a right */
+.navigation {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Se oculta a la derecha inicialmente */
+    width: 250px;
+    height: 100%;
+    background: #333;
+    transition: right 0.4s ease;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra hacia la izquierda */
+    z-index: 1000;
+}
+
+/* Cuando está activo, se muestra desde la derecha */
+.navigation.active {
+    right: 0;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.navigation ul li {
+    margin: 15px 0;
+}
+
+.navigation ul li a {
+    display: flex;
+    align-items: center;
+    color: #fff; /* Texto blanco */
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navigation ul li a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+.navigation ul li a .icon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #fff; /* Íconos blancos */
+}
+
+.navigation ul li a .title {
+    font-size: 1em;
+    color: #fff; /* Títulos blancos */
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    left: 15px; /* Cambiado de right a left */
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: #f44336;
+}
+
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px; /* Cambiado de left a right */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #ffffff;
+    color: #000000;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.menu-toggle i {
+    font-size: 20px;
+    color: #000; /* Puedes cambiarlo a blanco si deseas */
+}
+
+.menu-toggle:hover {
+    background: #e0e0e0;
+    color: #333;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+}
