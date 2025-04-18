@@ -1,0 +1,94 @@
+.logo_monovapoly {
+    width: 100%;
+    max-width: 600px; /* Más ancho para destacar */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    background-color: #000; /* Fondo negro */
+    padding: 15px; /* Marco interno */
+    border: 6px solid #f44336; /* Contorno rojo */
+    box-shadow: 0 0 25px #000, 0 0 40px #f44336; /* Sombra negra y roja */
+    border-radius: 20px; /* Bordes redondeados en toda la caja */
+    position: relative; /* Para manejar las esquinas */
+    overflow: hidden; /* Asegura que las esquinas redondeadas se vean correctamente */
+    animation: pulse 0.7s infinite; /* Pulso continuo */
+    transition: transform 0.1s ease, box-shadow 0.1s ease; /* Transición rápida */
+}
+
+
+
+/* Estilo de la imagen */
+.logo_monovapoly img {
+    width: 100%; /* Imagen completamente ajustada al contenedor */
+    height: auto;
+    border-radius: 15px; /* Bordes redondeados en la imagen */
+    transition: transform 0.1s ease; /* Más rápida la transformación */
+}
+
+
+.box {
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 60px);
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.box .group {
+    position: relative;
+    transform: rotate(-30deg);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.iconContainer {
+    display: flex;
+    gap: 0.5em;
+    font-size: 4em;
+    width: 200vw;
+    animation: animate 80s linear infinite;
+}
+
+@keyframes animate {
+    0%, 100% {
+        transform: translateX(-100vw);
+    }
+    50% {
+        transform: translateX(0vw);
+    }
+}
+
+.iconContainer:nth-child(even) {
+    animation: animate2 80s linear infinite;
+}
+
+@keyframes animate2 {
+    0%, 100% {
+        transform: translateX(0vw);
+    }
+    50% {
+        transform: translateX(-100vw);
+    }
+}
+
+.iconContainer i {
+    cursor: default;
+    user-select: none;
+    transition: 0.3s; 
+    color: transparent;
+    opacity: 0.5; 
+    -webkit-text-stroke: 1px #888; 
+}
+
+.iconContainer i:hover {
+    color: #888; 
+    opacity: 1;
+    text-shadow: 0 0 10px #888;
+    -webkit-text-stroke: 1px transparent;
+}

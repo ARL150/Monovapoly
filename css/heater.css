@@ -1,0 +1,95 @@
+/* Encabezado */
+header {
+    background-color: #000000;
+    padding: 15px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Navegación */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+    gap: 5px; /* Reducido para que los elementos quepan mejor */
+    margin-left: auto; /* Alinea los elementos a la derecha */
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem; /* Reducido para que el texto quepa mejor */
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 6px 10px; /* Ajustado para reducir el tamaño del botón */
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #f44336;
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05); /* Reducción en el efecto hover */
+}
+
+/* Subrayado animado en hover */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #f44336;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Estilos en pantallas pequeñas */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-link {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nav-link:hover {
+        transform: none;
+    }
+}
+
+.logo {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}

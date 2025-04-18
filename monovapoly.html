@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monovapoly</title>
+    <link rel="icon" type="image/x-icon" href="/images/monovapoly.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@600&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/heater.css">
+    <link rel="stylesheet" href="css/botonWhatss.css">
+    <link rel="stylesheet" href="css/redes.css">
+    <link rel="stylesheet" href="css/ubicaciones.css">
+    <link rel="stylesheet" href="css/nosotros.css">
+    <link rel="stylesheet" href="css/logo.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/preguntas.css">
+    <link rel="stylesheet" href="css/pedidos.css">
+    <link rel="stylesheet" href="css/carrusel.css">
+    <link rel="stylesheet" href="css/nosotros.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <!-- Header -->
+    <header class="py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <img src="images/monovapoly.png" alt="Monovapoly Logo" class="logo">
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="#home">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#about">¿Quiénes somos?</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#locations">Sucursales</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#delivery">Servicio a domicilio</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#social">Redes Sociales</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#faq">Preguntas Frecuentes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <br>
+    <div style="height: 4px; background-color: #ff0019; width: 100%;"></div>
+
+    <br>
+    <div class="logo_monovapoly">
+        <img src="images/logo.png" alt="Monovapoly Logo" class="logo">
+    </div>
+    <br>
+    <!-- Carrusel de Productos -->
+    <section id="carrusel-productos" class="carousel slide" data-bs-ride="carousel">
+        <h3 id="productos" class="titulo-seccion">Nuestros Productos</h3>
+        <p id="texto" class="descripcion-seccion">Explora nuestra selección de productos de alta calidad. ¡Encuentra lo
+            que necesitas con un solo clic!</p>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carrusel-productos" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carrusel-productos" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carrusel-productos" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carrusel-productos" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carrusel-productos" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carrusel-productos" data-bs-slide-to="5"
+                aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/vapes/1.png" class="d-block w-100 carrusel-img" alt="Producto 1">
+            </div>
+            <div class="carousel-item">
+                <img src="images/vapes/2.png" class="d-block w-100 carrusel-img" alt="Producto 2">
+            </div>
+            <div class="carousel-item">
+                <img src="images/vapes/3.png" class="d-block w-100 carrusel-img" alt="Producto 3">
+            </div>
+            <div class="carousel-item">
+                <img src="images/vapes/4.png" class="d-block w-100 carrusel-img" alt="Producto 4">
+            </div>
+            <div class="carousel-item">
+                <img src="images/vapes/5.png" class="d-block w-100 carrusel-img" alt="Producto 5">
+            </div>
+            <div class="carousel-item">
+                <img src="images/vapes/6.png" class="d-block w-100 carrusel-img" alt="Producto 6">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-productos" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carrusel-productos" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </section>
+    <!-- Home Section -->
+    <section id="home" class="text-center py-5">
+        <div class="container">
+            <h2>Estamos exclusivamente en Aguascalientes, México</h2>
+        </div>
+    </section>
+
+
+    <!-- About Us Section -->
+    <section id="about" class="container py-5">
+        <h3 class="text-center title">¿Quiénes somos?</h3>
+        <p class="description">En Monovapoly somos una empresa local de Aguascalientes, nacida con el objetivo de
+            modernizar la experiencia de compra y crear un espacio donde el servicio, la atención y el estilo se sientan
+            diferentes.<br>Queremos que cada cliente diga: “yo compro ahí, no porque no haya más lugares, sino porque me
+            gusta cómo lo hacen”.<br>Buscamos siempre que lo que vendemos se sienta exclusivo, bonito y, sobre todo,
+            bien atendido. Creemos que la diferencia está en los detalles, y por eso trabajamos cada día para que venir
+            a Monovapoly se sienta chido.</p>
+
+        <h3 class="text-center title">¿Qué ofrecemos?</h3>
+        <p class="description">Ofrecemos principalmente vapes de todos los modelos y sabores, además de gorras y
+            vapes.<br>Manejamos el mejor precio posible, cuidando siempre que eso no afecte la calidad del servicio que
+            damos.<br>Nuestro compromiso es mantenernos actualizados, brindar asesoría, garantizar disponibilidad y
+            atender bien, para que cada compra sea una buena experiencia.<br>En Monovapoly no solo vendemos productos:
+            ofrecemos estilo, atención y confianza.</p>
+    </section>
+    <br>
+    <br>
+
+
+    <section id="branches" class="p-5 text-center bg-black text-white">
+        <h3 class="fw-bold text-center mb-4">Nuestras Sucursales</h3>
+        <p id="texto" class="text-center mb-4">Conoce nuestras ubicaciones en Aguascalientes:</p>
+
+        <div class="branches-grid">
+            <!-- Sucursal 1 -->
+            <div class="branch">
+                <h4 class="branch-title">Express Universidad</h4>
+                <p class="address">Sierra Nevada 102, Los Bosques, 20120 Aguascalientes, Ags.</p>
+                <p class="schedule"><i class="bi bi-clock"></i> Horario: 9 a.m. - 9 p.m. (Domingo cerrado)</p>
+                <p class="phone"><i class="bi bi-telephone"></i> Tel: 449-123-4567</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118441.31861695649!2d-102.44871975664061!3d21.923353699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ef2cecb55e2d%3A0x7d834e9989c8b8fc!2sMONOVAPOLY%20EXPRESS%20UNIVERSIDAD!5e0!3m2!1ses!2smx!4v1743543181649!5m2!1ses!2smx"
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <!-- Sucursal 2 -->
+            <div class="branch">
+                <h4 class="branch-title">Norte</h4>
+                <p class="address">Prol. Gral. Ignacio Zaragoza 205a, Jardines de la Concepción II, 20120
+                    Aguascalientes, Ags.</p>
+                <p class="schedule"><i class="bi bi-clock"></i> Horario: 9 a.m. - 9 p.m.</p>
+                <p class="phone"><i class="bi bi-telephone"></i> Tel: 449-234-5678</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118441.31861695649!2d-102.44871975664061!3d21.923353699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429efe25b1190d7%3A0xc4baefc49d22730b!2sMonovapoly%20Norte!5e0!3m2!1ses!2smx!4v1743543111633!5m2!1ses!2smx"
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <!-- Sucursal 3 -->
+            <div class="branch">
+                <h4 class="branch-title">Centro</h4>
+                <p class="address">Venustiano Carranza 216, Zona Centro, 20000 Aguascalientes, Ags.</p>
+                <p class="schedule"><i class="bi bi-clock"></i> Horario: 9 a.m. - 10 p.m. (Domingo 12 - 9 p.m.)</p>
+                <p class="phone"><i class="bi bi-telephone"></i> Tel: 449-345-6789</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118441.31861695649!2d-102.44871975664061!3d21.923353699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ef6e60650189%3A0x2a5ad347ab283afb!2sMonovapoly%20Centro!5e0!3m2!1ses!2smx!4v1743543154779!5m2!1ses!2smx"
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <!-- Sucursal 4 -->
+            <div class="branch">
+                <h4 class="branch-title">Pocitos</h4>
+                <p class="address">Placita San José, 20126 Aguascalientes, Ags.</p>
+                <p class="schedule"><i class="bi bi-clock"></i> Horario: 10 a.m. - 9 p.m. (Domingo cerrado)</p>
+                <p class="phone"><i class="bi bi-telephone"></i> Tel: 449-456-7890</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118441.31861695649!2d-102.44871975664061!3d21.923353699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ef6e60650189%3A0x2a5ad347ab283afb!2sMonovapoly%20Centro!5e0!3m2!1ses!2smx!4v1743543154779!5m2!1ses!2smx"
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <!-- Sucursal 5 -->
+            <div class="branch">
+                <h4 class="branch-title">Trojes</h4>
+                <p class="address">La Placita San José, Adolfo López Mateos 103, Trojes de Alonso, 20908 Aguascalientes,
+                    Ags.</p>
+                <p class="schedule"><i class="bi bi-clock"></i> Horario: 9 a.m. - 10 p.m. (Domingo 12 - 9 p.m.)</p>
+                <p class="phone"><i class="bi bi-telephone"></i> Tel: 449-567-8901</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118441.31861695649!2d-102.44871975664061!3d21.923353699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ef0044eb5d5f%3A0x1c2ed56c6a0ba973!2sMONOVAPOLY%20Trojes!5e0!3m2!1ses!2smx!4v1743543240013!5m2!1ses!2smx"
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+        </div>
+
+        <h3 class="fw-bold mt-5 upcoming-title">Próximamente nuevas ubicaciones 🚀</h3>
+        <div id="texto" class="upcoming-branches">
+            <p>Estamos trabajando en nuevas sucursales en diferentes puntos de la ciudad.</p>
+            <p>¡Pronto anunciaremos más detalles!</p>
+        </div>
+    </section>
+
+    <!-- Delivery Section -->
+    <section id="delivery" class="text-center py-5 bg-black text-white">
+        <h3 class="display-4 mb-3">Servicio a Domicilio</h3>
+        <p id="texto" class="lead mb-4">Haz tu pedido directamente por nuestra página y recibe tu producto donde
+            quieras.</p>
+
+        <a href="https://shop.wapidelo.com/monovapoly" class="btn btn-success btn-lg" target="_blank">
+            <i class='bx bx-store'></i> ¡Haz tu pedido ahora!
+        </a>
+    </section>
+
+
+    <br>
+
+    <!-- Social Media Section -->
+    <section id="social" class="container py-5" style="background-color: #222;">
+        <h3 id="titulo-redes" class="text-center mb-4 title">¡Síguenos en nuestras Redes Sociales!</h3>
+
+        <p class="text">Conéctate con nosotros y no te pierdas de ninguna novedad, estilo y
+            promociones exclusivas.</p>
+        <br>
+        <!-- Instagram Section -->
+        <h4 id="redes" class="text-center text-white">
+            <i class='bx bxl-instagram' style="font-size: 1.5em; vertical-align: middle; margin-right: 8px;"></i>
+            Instagram
+        </h4>
+
+        <!-- LightWidget WIDGET -->
+        <div class="instagram-widget-container">
+            <iframe src="//lightwidget.com/widgets/13e31e2bf5a155f08fff9d507571dca1.html" scrolling="no"
+                allowtransparency="true" class="lightwidget-widget"
+                style="width:100%;border:0;overflow:hidden;"></iframe>
+        </div>
+        <!-- TikTok Section -->
+        <h4 id="redes" class="text-center text-white mt-5">
+            <i class='bx bxl-tiktok' style="font-size: 1.5em; vertical-align: middle; margin-right: 8px;"></i>
+            TikTok
+        </h4>
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@monovapoly" data-unique-id="monovapoly"
+            data-embed-from="embed_page" data-embed-type="creator" style="max-width:780px; min-width:288px;">
+            <section> <a target="_blank" href="https://www.tiktok.com/@monovapoly?refer=creator_embed">@monovapoly</a>
+            </section>
+        </blockquote>
+        <script async src="https://www.tiktok.com/embed.js"></script>
+
+    </section>
+    <br>
+    <!-- Card de Suscripción -->
+    <div class="card text-center text-white"
+        style="background-color: #000; border-radius: 15px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);">
+        <div class="card-body">
+            <h3 class="card-title mb-3" style="font-weight: bold; text-transform: uppercase;">¡Suscríbete y Obtén un 10%
+                de Descuento!</h3>
+            <p class="card-text mb-4" style="font-size: 1.2rem;">Recibe promociones exclusivas y las últimas novedades
+                directamente en tu correo.</p>
+            <a href="https://links.monovapoly.store/" class="btn btn-danger btn-lg" style="    background-color: #ff0019;
+            border-radius: 30px; padding: 0.8rem 2rem;">Suscribirse Ahora</a>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="container py-5 seccion-negra">
+        <h3 id="preguntas-frecuentes" class="text-center mb-4">Preguntas Frecuentes – Monovapoly</h3>
+        <div class="accordion" id="faqAccordion">
+
+            <!-- Pregunta 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        ¿Cómo aplico mi garantía?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Lleva tu vape a la sucursal donde lo compraste. Si lo pediste a domicilio, igual necesitas
+                        llevarlo físicamente a una sucursal.
+                        Puedes aplicar la garantía solo el día de tu compra o al día siguiente. Después de eso, ya no es
+                        válida la garantía.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        ¿Hacen envíos a otros estados?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        No, por el momento solo vendemos de forma minorista en Aguascalientes.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        ¿Dónde están ubicados?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Nos puedes encontrar en estas sucursales de Aguascalientes:
+                        <ul>
+                            <li>Zaragoza</li>
+                            <li>Centro</li>
+                            <li>Pocitos</li>
+                            <li>Universidad Autónoma (UA)</li>
+                            <li>Trojes</li>
+                        </ul>
+                        ¡Próximamente más locaciones!
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        ¿Tienen redes sociales?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        ¡Claro! Síguenos en TikTok y Facebook como <strong>Monovapoly</strong>.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 5 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        ¿Venden a domicilio?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Sí. Puedes pedir a domicilio fácilmente desde este enlace:
+                        <a href="https://shop.wapidelo.com/monovapoly"
+                            target="_blank">https://shop.wapidelo.com/monovapoly</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 6 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        ¿Venden a menores de edad?
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        No. La venta es exclusivamente para mayores de 18 años, con verificación de edad en sucursal y
+                        en pedidos.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 7 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        ¿Facturan?
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        No, por el momento no manejamos facturación.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 8 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        ¿Puedo apartar productos?
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        No realizamos apartados. Lo que está disponible está para venta inmediata. ¡Así aseguramos que
+                        todos puedan acceder a lo más nuevo!
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 9 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                        ¿Puedo pagar con tarjeta?
+                    </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Sí, aceptamos pagos con tarjeta de crédito y débito en todas nuestras sucursales.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div style="height: 4px; background-color: #ff0019; width: 100%;"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row"
+                style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
+                <!-- Sección de marca -->
+                <div class="col-md-6 mb-3">
+                    <h5 class="footer-title">MONOVAPOLY</h5>
+                    <br>
+                    <br>
+                    <p id="texto-footer">Calidad, estilo y comunidad en Aguascalientes</p>
+                </div>
+
+
+                <!-- Sección de redes sociales -->
+                <div class="col-md-6 mb-3" style="flex: 1; min-width: 280px;">
+                    <h5 class="footer-title">Síguenos</h5>
+                    <br>
+                    <br>
+                    <a href="https://www.instagram.com/monovapoly" id="btnInstagram" class="social">
+                        <i class="bi bi-instagram social-icon"></i> Instagram
+                    </a>
+
+                    <a href="https://www.tiktok.com/@monovapoly" id="btnTikTok" class="social">
+                        <i class="bi bi-tiktok social-icon"></i> TikTok
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Pie inferior -->
+            <div class="footer-bottom">
+                <p>©2025 <strong>Monovapoly</strong> | Todos los derechos reservados</p>
+                <p>Desarrollado por <strong>Abraham Robledo</strong></p>
+            </div>
+        </div>
+        <br>
+        <div style="height: 4px; background-color: #ff0019; width: 100%;"></div>
+
+    </footer>
+
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/524492030408" class="whatsapp-icon"><img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="40">
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/funciones.js"> </script>
+    <script src="js/fondo.js"></script>
+    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+</body>
+
+</html>

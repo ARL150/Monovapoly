@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* About Section Styling */
+#about {
+    background-color: #fff; /* White background */
+    padding: 50px 20px;
+    text-align: center;
+    color: #333;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    position: relative;
+    overflow: hidden; /* To handle the animated borders */
+    transition: all 0.5s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect on the About section */
+#about:hover {
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15); /* Deep shadow on hover */
+    transform: translateY(-10px); /* Slight lift on hover */
+}
+
+/* Title Styling */
+#about .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f00; /* Red color */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+/* Underline Animation on Title */
+#about .title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 2px;
+    background-color: #f00;
+    animation: underlineAnimation 1s ease-out forwards;
+}
+
+/* Keyframe for underline animation */
+@keyframes underlineAnimation {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+/* Description Styling */
+#about .description {
+    font-size: 1.15rem;
+    color: #555;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Add a subtle red border with a cool animation */
+#about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 5px solid #f00;
+    border-radius: 20px;
+    opacity: 0;
+    animation: borderAnimation 2s ease-out forwards;
+}
+
+/* Keyframe for border animation */
+@keyframes borderAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    #about .title {
+        font-size: 2rem;
+    }
+
+    #about .description {
+        font-size: 1rem;
+    }
+}
+
+/* Sección de entrega */
+#delivery {
+    background-color: #1a1a1a; /* Fondo oscuro */
+    padding: 3rem 0;
+    color: white;
+    text-align: center;
+    border-top: 5px solid #f44336; /* Borde superior rojo */
+    border-bottom: 5px solid #f44336; /* Borde inferior rojo */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out; /* Animación de entrada */
+}
+
+/* Animación para la entrada de la sección */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Sección de entrega */
+#delivery {
+    background-color: #000000; /* Fondo oscuro */
+    padding: 3rem 0;
+    color: white;
+    text-align: center;
+    border-top: 5px solid #28a745; /* Borde verde */
+    border-bottom: 5px solid #28a745; /* Borde verde */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out; /* Animación de entrada */
+}
+
+/* Animación para la entrada de la sección */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Título */
+#delivery h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #28a745; /* Verde */
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Párrafo */
+#delivery p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    color: #ddd;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* Botón de éxito */
+.btn-success {
+    background-color: #28a745; /* Verde vibrante */
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-success i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.btn-success:hover {
+    background-color: #218838; /* Verde más oscuro */
+    transform: translateY(-5px); /* Elevación al pasar el mouse */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-success:active {
+    transform: translateY(0); /* Vuelve a su posición original al hacer clic */
+}
+
+
+
+/* Estilos del acordeón */
+.accordion-button {
+    font-weight: bold;
+    color: #000000;
+    background-color: #f4f4f4;
+    transition: all 0.3s ease;
+}
+
+.accordion-button:hover {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.accordion-body {
+    background-color: #ffffff;
+    color: #555;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Estilos de íconos */
+.iconContainer {
+    display: flex;
+    gap: 0.5em;
+    font-size: 2em;
+    width: 200vw;
+    animation: animate 80s linear infinite;
+}
+
+@keyframes animate {
+    0%, 100% { transform: translateX(-100vw); }
+    50% { transform: translateX(0vw); }
+}
+
+.iconContainer:nth-child(even) {
+    animation: animate2 80s linear infinite;
+}
+
+@keyframes animate2 {
+    0%, 100% { transform: translateX(0vw); }
+    50% { transform: translateX(-100vw); }
+}
+
+.iconContainer i {
+    cursor: default;
+    user-select: none;
+    transition: 0.3s;
+    color: transparent;
+    opacity: 0.5;
+    -webkit-text-stroke: 1px #888;
+}
+
+.iconContainer i:hover {
+    color: #888;
+    opacity: 1;
+    text-shadow: 0 0 10px #888;
+    -webkit-text-stroke: 1px transparent;
+}
+
+/* Estilos adicionales */
+.box {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 60px);
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.box .group {
+    position: relative;
+    transform: rotate(-30deg);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+
+
