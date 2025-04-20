@@ -259,3 +259,22 @@ p.text {
     }
 }
 
+.instagram-section {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px 15px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .instagram-section {
+        padding: 10px;
+    }
+}
+
+h4#redes {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+

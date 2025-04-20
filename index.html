@@ -4,6 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Metadatos importantes para SEO -->
+    <meta name="description"
+        content="Compra los mejores vapes en Aguascalientes. En Monovapoly encontrarás variedad de sabores, calidad premium y marcas reconocidas.">
+    <meta name="keywords" content="vapes, monovapoly, vapes en Aguascalientes, vapeadores, pods, desechables, Elf Bar, Maskking, Vaporesso, vapes con nicotina, vapes sin nicotina, sabores frutales, sabores exóticos, tienda de vapes, vapes baratos, vapes originales, tienda de vapeo Aguascalientes, tiendas vapes Ags, tiendas de Vapes Aguascalientes,
+         líquidos para vapes, accesorios para vapeo, vapes, gorras">
+    <meta name="author" content="Monovapoly">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Spanish">
+    <meta name="geo.region" content="MX-AGU">
+    <meta name="geo.placename" content="Aguascalientes">
+    <meta name="geo.position" content="21.8853;-102.2916">
+    <meta name="ICBM" content="21.8853, -102.2916">
+
+
+
     <title>Monovapoly</title>
     <link rel="icon" type="image/x-icon" href="/images/monovapoly.png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -31,14 +47,14 @@
 </head>
 
 <body>
-<br>
+    <br>
     <div style="height: 4px; background-color: #ff0019; width: 100%;"></div>
     <!-- Header -->
     <header class="py-3">
         <div class="container d-flex justify-content-between align-items-center">
             <!-- Logo a la izquierda -->
             <img src="images/monovapoly.png" alt="Monovapoly Logo" class="logo">
-    
+
             <!-- Navegación -->
             <nav class="navbar d-flex align-items-center">
                 <ul class="nav" id="mainMenu">
@@ -49,14 +65,14 @@
                     <li><a class="nav-link" href="#social">Redes Sociales</a></li>
                     <li><a class="nav-link" href="#faq">Preguntas Frecuentes</a></li>
                 </ul>
-    
+
                 <!-- Botón de menú lateral -->
                 <div class="menu-toggle" onclick="Menu()">
                     <i class="bx bx-menu"></i>
                 </div>
             </nav>
         </div>
-    
+
         <!-- Menú lateral -->
         <div class="navigation" id="sideMenu">
             <div class="close-btn" onclick="Menu()">&#10005;</div>
@@ -64,14 +80,14 @@
                 <br>
                 <li><a class="nav-link" href="#home">Inicio</a></li>
                 <li><a class="nav-link" href="#about">¿Quiénes somos?</a></li>
-                <li><a class="nav-link" href="#locations">Sucursales</a></li>
+                <li><a class="nav-link" href="#sucursales">Sucursales</a></li>
                 <li><a class="nav-link" href="#delivery">Servicio a domicilio</a></li>
                 <li><a class="nav-link" href="#social">Redes Sociales</a></li>
                 <li><a class="nav-link" href="#faq">Preguntas Frecuentes</a></li>
             </ul>
         </div>
     </header>
-    
+
     <br>
     <div style="height: 4px; background-color: #ff0019; width: 100%;"></div>
 
@@ -157,7 +173,8 @@
     <br>
 
 
-    <section id="branches" class="p-5 text-center bg-black text-white">
+    <section  id="branches" class="p-5 text-center bg-black text-white">
+        <div id="sucursales"> </div>
         <h3 class="fw-bold text-center mb-4">Nuestras Sucursales</h3>
         <p id="texto" class="text-center mb-4">Conoce nuestras ubicaciones en Aguascalientes:</p>
 
@@ -255,13 +272,14 @@
             <i class='bx bxl-instagram' style="font-size: 1.5em; vertical-align: middle; margin-right: 8px;"></i>
             Instagram
         </h4>
-
-        <!-- LightWidget WIDGET -->
-        <div class="instagram-widget-container">
-            <iframe src="//lightwidget.com/widgets/13e31e2bf5a155f08fff9d507571dca1.html" scrolling="no"
-                allowtransparency="true" class="lightwidget-widget"
-                style="width:100%;border:0;overflow:hidden;"></iframe>
+<br>
+        <!-- Elfsight Instagram Feed -->
+        <div class="instagram-section">
+            <script src="https://static.elfsight.com/platform/platform.js" async></script>
+            <div class="elfsight-app-aab6fe7f-a919-4b1d-a09b-0cc6bebfc084" data-elfsight-app-lazy></div>
         </div>
+
+
         <!-- TikTok Section -->
         <h4 id="redes" class="text-center text-white mt-5">
             <i class='bx bxl-tiktok' style="font-size: 1.5em; vertical-align: middle; margin-right: 8px;"></i>
